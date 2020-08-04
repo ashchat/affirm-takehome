@@ -32,12 +32,12 @@ class HomePageViewController: UIViewController {
     var cardTwo = CardView()
     var cardThree = CardView()
     var cardFour = CardView()
-    var cardFive = CardView()
     var cards = [CardView]()
     
     let network = Network()
     var offset = 0
     var businesses: [Business]?
+    var currIndex = 0
     
     override func viewWillAppear(_ animated: Bool) {
         fetchBusinesses(offset: offset)
@@ -52,7 +52,16 @@ class HomePageViewController: UIViewController {
     func fetchBusinesses(offset: Int) {
         network.fetchYelpResults(latitude: 40, longitude: -70, offset: offset, term: "restaurant") { (response, error) in
             if let response = response {
-                self.businesses = response.businesses
+                if self.businesses != nil {
+                    self.businesses?.append(contentsOf: response.businesses)
+                } else {
+                    self.businesses = response.businesses
+                    performUIUpdatesOnMain {
+                        for i in 0..<self.cards.count {
+                            self.cards[i].business = self.businesses![i]
+                        }
+                    }
+                }
             }
         }
     }

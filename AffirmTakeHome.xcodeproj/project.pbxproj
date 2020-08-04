@@ -15,7 +15,6 @@
 		C379CC1424D8E3D100E991AB /* AffirmTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC1324D8E3D100E991AB /* AffirmTakeHomeTests.swift */; };
 		C379CC1F24D8E3D100E991AB /* AffirmTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC1E24D8E3D100E991AB /* AffirmTakeHomeUITests.swift */; };
 		C379CC2E24D8E43E00E991AB /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC2C24D8E43E00E991AB /* HomePageViewController.swift */; };
-		C379CC2F24D8E43E00E991AB /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C379CC2D24D8E43E00E991AB /* HomePageViewController.xib */; };
 		C379CC3324D8E47C00E991AB /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC3224D8E47C00E991AB /* BusinessModel.swift */; };
 		C379CC3524D8E4A200E991AB /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC3424D8E4A200E991AB /* Network.swift */; };
 		C379CC3724D8E4B900E991AB /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC3624D8E4B900E991AB /* HomePageViewModel.swift */; };
@@ -55,7 +54,6 @@
 		C379CC1E24D8E3D100E991AB /* AffirmTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmTakeHomeUITests.swift; sourceTree = "<group>"; };
 		C379CC2024D8E3D100E991AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C379CC2C24D8E43E00E991AB /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		C379CC2D24D8E43E00E991AB /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		C379CC3224D8E47C00E991AB /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
 		C379CC3424D8E4A200E991AB /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C379CC3624D8E4B900E991AB /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 			children = (
 				C379CC2C24D8E43E00E991AB /* HomePageViewController.swift */,
 				C3AE56A324D8F5A400BC9606 /* HomePageViewController+UIElements.swift */,
-				C379CC2D24D8E43E00E991AB /* HomePageViewController.xib */,
 				C379CC3B24D8EA6D00E991AB /* CardView.swift */,
 			);
 			path = View;
@@ -283,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C379CC0924D8E3D100E991AB /* LaunchScreen.storyboard in Resources */,
-				C379CC2F24D8E43E00E991AB /* HomePageViewController.xib in Resources */,
 				C379CC0624D8E3D100E991AB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

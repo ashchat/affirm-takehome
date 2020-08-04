@@ -51,6 +51,7 @@ class CardView: UIView {
         
         nameLabel = UILabel()
         nameLabel?.translatesAutoresizingMaskIntoConstraints = false
+        nameLabel?.textColor = .white
         self.addSubview(nameLabel!)
         nameLabel?.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
         nameLabel?.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.25).isActive = true
@@ -58,6 +59,9 @@ class CardView: UIView {
         
         ratingLabel = UILabel()
         ratingLabel?.translatesAutoresizingMaskIntoConstraints = false
+        ratingLabel?.backgroundColor = .gray
+        ratingLabel?.textColor = .white
+        ratingLabel?.textAlignment = .center
         self.addSubview(ratingLabel!)
         ratingLabel?.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.25).isActive = true
         ratingLabel?.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.25).isActive = true
