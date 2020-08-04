@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C379CBFA24D8E3CF00E991AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CBF924D8E3CF00E991AB /* AppDelegate.swift */; };
+		C379CBFC24D8E3CF00E991AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CBFB24D8E3CF00E991AB /* SceneDelegate.swift */; };
+		C379CBFE24D8E3CF00E991AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CBFD24D8E3CF00E991AB /* ViewController.swift */; };
+		C379CC0124D8E3CF00E991AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C379CBFF24D8E3CF00E991AB /* Main.storyboard */; };
+		C379CC0424D8E3CF00E991AB /* AffirmTakeHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C379CC0224D8E3CF00E991AB /* AffirmTakeHome.xcdatamodeld */; };
+		C379CC0624D8E3D100E991AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C379CC0524D8E3D100E991AB /* Assets.xcassets */; };
+		C379CC0924D8E3D100E991AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C379CC0724D8E3D100E991AB /* LaunchScreen.storyboard */; };
+		C379CC1424D8E3D100E991AB /* AffirmTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC1324D8E3D100E991AB /* AffirmTakeHomeTests.swift */; };
+		C379CC1F24D8E3D100E991AB /* AffirmTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC1E24D8E3D100E991AB /* AffirmTakeHomeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C379CC1024D8E3D100E991AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C379CBEE24D8E3CF00E991AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C379CBF524D8E3CF00E991AB;
+			remoteInfo = AffirmTakeHome;
+		};
+		C379CC1B24D8E3D100E991AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C379CBEE24D8E3CF00E991AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C379CBF524D8E3CF00E991AB;
+			remoteInfo = AffirmTakeHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C379CBF624D8E3CF00E991AB /* AffirmTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AffirmTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C379CBF924D8E3CF00E991AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C379CBFB24D8E3CF00E991AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C379CBFD24D8E3CF00E991AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C379CC0024D8E3CF00E991AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C379CC0324D8E3CF00E991AB /* AffirmTakeHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AffirmTakeHome.xcdatamodel; sourceTree = "<group>"; };
+		C379CC0524D8E3D100E991AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C379CC0824D8E3D100E991AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C379CC0A24D8E3D100E991AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C379CC0F24D8E3D100E991AB /* AffirmTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AffirmTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C379CC1324D8E3D100E991AB /* AffirmTakeHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmTakeHomeTests.swift; sourceTree = "<group>"; };
+		C379CC1524D8E3D100E991AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C379CC1A24D8E3D100E991AB /* AffirmTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AffirmTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C379CC1E24D8E3D100E991AB /* AffirmTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmTakeHomeUITests.swift; sourceTree = "<group>"; };
+		C379CC2024D8E3D100E991AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C379CBF324D8E3CF00E991AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C379CC0C24D8E3D100E991AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C379CC1724D8E3D100E991AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C379CBED24D8E3CF00E991AB = {
+			isa = PBXGroup;
+			children = (
+				C379CBF824D8E3CF00E991AB /* AffirmTakeHome */,
+				C379CC1224D8E3D100E991AB /* AffirmTakeHomeTests */,
+				C379CC1D24D8E3D100E991AB /* AffirmTakeHomeUITests */,
+				C379CBF724D8E3CF00E991AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C379CBF724D8E3CF00E991AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C379CBF624D8E3CF00E991AB /* AffirmTakeHome.app */,
+				C379CC0F24D8E3D100E991AB /* AffirmTakeHomeTests.xctest */,
+				C379CC1A24D8E3D100E991AB /* AffirmTakeHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C379CBF824D8E3CF00E991AB /* AffirmTakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				C379CBF924D8E3CF00E991AB /* AppDelegate.swift */,
+				C379CBFB24D8E3CF00E991AB /* SceneDelegate.swift */,
+				C379CBFD24D8E3CF00E991AB /* ViewController.swift */,
+				C379CBFF24D8E3CF00E991AB /* Main.storyboard */,
+				C379CC0524D8E3D100E991AB /* Assets.xcassets */,
+				C379CC0724D8E3D100E991AB /* LaunchScreen.storyboard */,
+				C379CC0A24D8E3D100E991AB /* Info.plist */,
+				C379CC0224D8E3CF00E991AB /* AffirmTakeHome.xcdatamodeld */,
+			);
+			path = AffirmTakeHome;
+			sourceTree = "<group>";
+		};
+		C379CC1224D8E3D100E991AB /* AffirmTakeHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C379CC1324D8E3D100E991AB /* AffirmTakeHomeTests.swift */,
+				C379CC1524D8E3D100E991AB /* Info.plist */,
+			);
+			path = AffirmTakeHomeTests;
+			sourceTree = "<group>";
+		};
+		C379CC1D24D8E3D100E991AB /* AffirmTakeHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C379CC1E24D8E3D100E991AB /* AffirmTakeHomeUITests.swift */,
+				C379CC2024D8E3D100E991AB /* Info.plist */,
+			);
+			path = AffirmTakeHomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C379CBF524D8E3CF00E991AB /* AffirmTakeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C379CC2324D8E3D100E991AB /* Build configuration list for PBXNativeTarget "AffirmTakeHome" */;
+			buildPhases = (
+				C379CBF224D8E3CF00E991AB /* Sources */,
+				C379CBF324D8E3CF00E991AB /* Frameworks */,
+				C379CBF424D8E3CF00E991AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AffirmTakeHome;
+			productName = AffirmTakeHome;
+			productReference = C379CBF624D8E3CF00E991AB /* AffirmTakeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C379CC0E24D8E3D100E991AB /* AffirmTakeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C379CC2624D8E3D100E991AB /* Build configuration list for PBXNativeTarget "AffirmTakeHomeTests" */;
+			buildPhases = (
+				C379CC0B24D8E3D100E991AB /* Sources */,
+				C379CC0C24D8E3D100E991AB /* Frameworks */,
+				C379CC0D24D8E3D100E991AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C379CC1124D8E3D100E991AB /* PBXTargetDependency */,
+			);
+			name = AffirmTakeHomeTests;
+			productName = AffirmTakeHomeTests;
+			productReference = C379CC0F24D8E3D100E991AB /* AffirmTakeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C379CC1924D8E3D100E991AB /* AffirmTakeHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C379CC2924D8E3D100E991AB /* Build configuration list for PBXNativeTarget "AffirmTakeHomeUITests" */;
+			buildPhases = (
+				C379CC1624D8E3D100E991AB /* Sources */,
+				C379CC1724D8E3D100E991AB /* Frameworks */,
+				C379CC1824D8E3D100E991AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C379CC1C24D8E3D100E991AB /* PBXTargetDependency */,
+			);
+			name = AffirmTakeHomeUITests;
+			productName = AffirmTakeHomeUITests;
+			productReference = C379CC1A24D8E3D100E991AB /* AffirmTakeHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C379CBEE24D8E3CF00E991AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Ashish Chatterjee";
+				TargetAttributes = {
+					C379CBF524D8E3CF00E991AB = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					C379CC0E24D8E3D100E991AB = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C379CBF524D8E3CF00E991AB;
+					};
+					C379CC1924D8E3D100E991AB = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C379CBF524D8E3CF00E991AB;
+					};
+				};
+			};
+			buildConfigurationList = C379CBF124D8E3CF00E991AB /* Build configuration list for PBXProject "AffirmTakeHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C379CBED24D8E3CF00E991AB;
+			productRefGroup = C379CBF724D8E3CF00E991AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C379CBF524D8E3CF00E991AB /* AffirmTakeHome */,
+				C379CC0E24D8E3D100E991AB /* AffirmTakeHomeTests */,
+				C379CC1924D8E3D100E991AB /* AffirmTakeHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C379CBF424D8E3CF00E991AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C379CC0924D8E3D100E991AB /* LaunchScreen.storyboard in Resources */,
+				C379CC0624D8E3D100E991AB /* Assets.xcassets in Resources */,
+				C379CC0124D8E3CF00E991AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C379CC0D24D8E3D100E991AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C379CC1824D8E3D100E991AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C379CBF224D8E3CF00E991AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C379CBFE24D8E3CF00E991AB /* ViewController.swift in Sources */,
+				C379CBFA24D8E3CF00E991AB /* AppDelegate.swift in Sources */,
+				C379CC0424D8E3CF00E991AB /* AffirmTakeHome.xcdatamodeld in Sources */,
+				C379CBFC24D8E3CF00E991AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C379CC0B24D8E3D100E991AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C379CC1424D8E3D100E991AB /* AffirmTakeHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C379CC1624D8E3D100E991AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C379CC1F24D8E3D100E991AB /* AffirmTakeHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C379CC1124D8E3D100E991AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C379CBF524D8E3CF00E991AB /* AffirmTakeHome */;
+			targetProxy = C379CC1024D8E3D100E991AB /* PBXContainerItemProxy */;
+		};
+		C379CC1C24D8E3D100E991AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C379CBF524D8E3CF00E991AB /* AffirmTakeHome */;
+			targetProxy = C379CC1B24D8E3D100E991AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C379CBFF24D8E3CF00E991AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C379CC0024D8E3CF00E991AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C379CC0724D8E3D100E991AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C379CC0824D8E3D100E991AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C379CC2124D8E3D100E991AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C379CC2224D8E3D100E991AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C379CC2424D8E3D100E991AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X64283BNM4;
+				INFOPLIST_FILE = AffirmTakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.AffirmTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C379CC2524D8E3D100E991AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X64283BNM4;
+				INFOPLIST_FILE = AffirmTakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.AffirmTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C379CC2724D8E3D100E991AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X64283BNM4;
+				INFOPLIST_FILE = AffirmTakeHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.AffirmTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AffirmTakeHome.app/AffirmTakeHome";
+			};
+			name = Debug;
+		};
+		C379CC2824D8E3D100E991AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X64283BNM4;
+				INFOPLIST_FILE = AffirmTakeHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.AffirmTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AffirmTakeHome.app/AffirmTakeHome";
+			};
+			name = Release;
+		};
+		C379CC2A24D8E3D100E991AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X64283BNM4;
+				INFOPLIST_FILE = AffirmTakeHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.AffirmTakeHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AffirmTakeHome;
+			};
+			name = Debug;
+		};
+		C379CC2B24D8E3D100E991AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X64283BNM4;
+				INFOPLIST_FILE = AffirmTakeHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.AffirmTakeHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AffirmTakeHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C379CBF124D8E3CF00E991AB /* Build configuration list for PBXProject "AffirmTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C379CC2124D8E3D100E991AB /* Debug */,
+				C379CC2224D8E3D100E991AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C379CC2324D8E3D100E991AB /* Build configuration list for PBXNativeTarget "AffirmTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C379CC2424D8E3D100E991AB /* Debug */,
+				C379CC2524D8E3D100E991AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C379CC2624D8E3D100E991AB /* Build configuration list for PBXNativeTarget "AffirmTakeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C379CC2724D8E3D100E991AB /* Debug */,
+				C379CC2824D8E3D100E991AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C379CC2924D8E3D100E991AB /* Build configuration list for PBXNativeTarget "AffirmTakeHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C379CC2A24D8E3D100E991AB /* Debug */,
+				C379CC2B24D8E3D100E991AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C379CC0224D8E3CF00E991AB /* AffirmTakeHome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C379CC0324D8E3CF00E991AB /* AffirmTakeHome.xcdatamodel */,
+			);
+			currentVersion = C379CC0324D8E3CF00E991AB /* AffirmTakeHome.xcdatamodel */;
+			path = AffirmTakeHome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C379CBEE24D8E3CF00E991AB /* Project object */;
+}
