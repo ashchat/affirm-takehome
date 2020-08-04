@@ -28,7 +28,8 @@ class HomePageViewController: UIViewController {
         return button
     }()
     
-    var cardViews: [CardView] = []
+    var cards: [CardView] = []
+    let yelp = YelpAPI()
     
     override func viewDidLoad() {
         super.viewDidLoad()

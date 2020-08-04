@@ -6,8 +6,13 @@
 //  Copyright © 2020 Ashish Chatterjee. All rights reserved.
 //
 
-import UIKit
+public struct YelpAPIResponse: Codable {
+    let businesses: [Business]
+}
 
-class BusinessModel: NSObject {
-
+public struct Business: Codable {
+    let id: String
+    let name: String
+    let rating: Double
+    let imageURL: String = "image_url"
 }
