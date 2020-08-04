@@ -1,0 +1,11 @@
+Ashish Chatterjee
+Affirm Take Home Write Up
+
+For this project, I began at roughly 6:00 pm PST August 4th, and completed around 9:30 pm PST after a family emergency came up and I had to cut myself off. 
+Around 1:30 am, I double checked my work and ensured that the app was running properly before making my final commit to GitHub.
+
+The most difficult part for me was definitely the CoreLocation implementation. It took me much longer than it should have to realize that the simulator was most likely the issue. Unfortunately, I was not able to test on my personal device at this time, so I couldn’t fully test the CoreLocation aspect.
+
+The biggest thing I feel like I should have spent more time on was my ViewModel. I began to implement it then focused on getting the project to work. If I had a little more time, I would have pulled out any network calls and pretty much anything that handles/manipulates the data from the HomePage View into the VM. I understand that it is better practice to do so and wish I had focused on it more from the beginning. Another thing I would have definitely added are some Unit/UI Tests from the start. I think this would have been better in order to almost force myself to create the VM, too!
+
+Overall, I feel like I did decently well. With the hang ups of the CLManager, I am proud of the work that I accomplished, though I know I could have done better. I also spent a little too much time on the animations and UI when I should have spent it on the VM as mentioned. This would have allowed for better readability for other engineers. I really enjoyed this project and hope to be able to speak about my implementation!
