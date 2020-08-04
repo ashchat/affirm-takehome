@@ -28,8 +28,20 @@ class HomePageViewController: UIViewController {
         return button
     }()
     
-    var cards: [CardView] = []
-    let yelp = YelpAPI()
+    var cardOne = CardView()
+    var cardTwo = CardView()
+    var cardThree = CardView()
+    var cardFour = CardView()
+    var cardFive = CardView()
+    var cards = [CardView]()
+    
+    let network = Network()
+    var offset = 0
+    var businesses: [Business]?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchBusinesses(offset: offset)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,18 +49,19 @@ class HomePageViewController: UIViewController {
         initUI()
     }
     
-    func initUI() {
-        self.view.addSubview(previousButton)
-        self.view.addSubview(nextButton)
-        
-    }
-    
-    @objc func prevButtonTapped(_ sender: UIButton) {
-        print("PREV")
-    }
-    
-    @objc func nextButtonTapped(_ sender: UIButton) {
-        print("NEXT")
+    func fetchBusinesses(offset: Int) {
+        network.fetchYelpResults(latitude: 40, longitude: -70, offset: offset, term: "restaurant") { (response, error) in
+            if let response = response {
+                self.businesses = response.businesses
+            }
+        }
     }
 
+}
+
+// Helper function for UI updates
+func performUIUpdatesOnMain(_ updates: @escaping () -> Void) {
+    DispatchQueue.main.async {
+        updates()
+    }
 }
