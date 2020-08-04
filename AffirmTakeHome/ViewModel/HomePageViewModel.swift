@@ -8,6 +8,9 @@
 
 import UIKit
 
-class HomePageViewModel: NSObject {
-
+class HomePageViewModel {
+    
+    var businesses: [Business] = []
+    
+    
 }
