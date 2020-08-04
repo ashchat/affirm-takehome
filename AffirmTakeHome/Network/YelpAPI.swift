@@ -8,6 +8,8 @@
 
 class YelpAPI {
 
-    
+    func fetchYelpResults(success: @escaping ([CardView]) -> Void, error: @escaping (Error?) -> Void) {
+        
+    }
     
 }
