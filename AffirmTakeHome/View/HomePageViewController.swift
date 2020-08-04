@@ -45,8 +45,6 @@ class HomePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        initUI()
     }
     
     func fetchBusinesses(offset: Int) {
@@ -57,6 +55,7 @@ class HomePageViewController: UIViewController {
                 } else {
                     self.businesses = response.businesses
                     performUIUpdatesOnMain {
+                        self.initUI()
                         for i in 0..<self.cards.count {
                             self.cards[i].business = self.businesses![i]
                         }

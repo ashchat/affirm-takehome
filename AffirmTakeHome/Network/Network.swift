@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Network {
     
@@ -33,6 +34,31 @@ class Network {
             }
         }
         task.resume()
+    }
+    
+    // Image load and cacheing
+    let imageCache = NSCache<AnyObject, AnyObject>()
+    
+    func loadImage(imageURL: String, completion: @escaping (UIImage?, Error?) -> Void) {
+        
+        let url = URL(string: imageURL)
+        
+        // if the image is in the cache, load it. otherwise, continue to the api call
+        if let imageFromCache = imageCache.object(forKey: imageURL as AnyObject) as? UIImage {
+            completion(imageFromCache, nil)
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            guard let data = data, error == nil else { return }
+            DispatchQueue.main.async() {
+                // cache images to enhance speed
+                let imageToCache = UIImage(data: data)!
+                self.imageCache.setObject(imageToCache, forKey: imageURL as AnyObject)
+                completion(imageToCache, nil)
+            }
+        }.resume()
+        
     }
     
 }

@@ -14,5 +14,12 @@ public struct Business: Codable {
     let id: String
     let name: String
     let rating: Double
-    let imageURL: String = "image_url"
+    let imageURL: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case rating
+        case imageURL = "image_url"
+    }
 }

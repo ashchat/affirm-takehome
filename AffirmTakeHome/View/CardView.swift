@@ -41,6 +41,8 @@ class CardView: UIView {
     }
     
     func initUI() {
+        self.clipsToBounds = true
+        
         imageView = UIImageView(frame: frame)
         imageView?.layer.masksToBounds = true
         imageView?.contentMode = .scaleAspectFill

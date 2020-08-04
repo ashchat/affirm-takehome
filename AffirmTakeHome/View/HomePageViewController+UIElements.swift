@@ -44,6 +44,11 @@ extension HomePageViewController {
         card.alpha = CGFloat(1.0 - position*0.5)
         let top = 50 + position*10
         card.frame = CGRect(x: 20, y: CGFloat(top), width: carddim, height: carddim)
+        network.loadImage(imageURL: self.businesses![card.position!].imageURL) { (image, error) in
+            if let image = image {
+                card.image = image
+            }
+        }
         self.view.addSubview(card)
         self.view.sendSubviewToBack(card)
     }
@@ -60,6 +65,11 @@ extension HomePageViewController {
                 card.frame = CGRect(x: 20-self.view.frame.width, y: 50, width: carddim, height: carddim)
                 card.alpha = 1
                 card.business = self.businesses![currIndex-1]
+                self.network.loadImage(imageURL: self.businesses![self.currIndex-1].imageURL) { (image, error) in
+                    if let image = image {
+                        card.image = image
+                    }
+                }
                 continue;
             }
             
@@ -86,7 +96,6 @@ extension HomePageViewController {
         if currIndex%10 == 4 {
             offset += 10
             fetchBusinesses(offset: offset)
-            
         }
         
         let carddim = self.view.frame.width-40
@@ -96,12 +105,17 @@ extension HomePageViewController {
             UIView.animate(withDuration: 1) {
                 if card.position == -1 {
                     card.frame = CGRect(x: 20-self.view.frame.width, y: 50, width: carddim, height: carddim)
-                    self.view.sendSubviewToBack(card)
                 } else {
                     if self.currIndex > 1 && card.position! < -1 {
                         card.position = 2
+                        self.view.sendSubviewToBack(card)
                         card.alpha = -0.5
                         card.business = self.businesses![self.currIndex+2]
+                        self.network.loadImage(imageURL: self.businesses![self.currIndex+2].imageURL) { (image, error) in
+                            if let image = image {
+                                card.image = image
+                            }
+                        }
                     }
                     card.alpha += 0.5
                     let top = 50 + card.position!*10
