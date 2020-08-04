@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		C379CBFA24D8E3CF00E991AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CBF924D8E3CF00E991AB /* AppDelegate.swift */; };
 		C379CBFC24D8E3CF00E991AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CBFB24D8E3CF00E991AB /* SceneDelegate.swift */; };
-		C379CBFE24D8E3CF00E991AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CBFD24D8E3CF00E991AB /* ViewController.swift */; };
-		C379CC0124D8E3CF00E991AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C379CBFF24D8E3CF00E991AB /* Main.storyboard */; };
 		C379CC0424D8E3CF00E991AB /* AffirmTakeHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C379CC0224D8E3CF00E991AB /* AffirmTakeHome.xcdatamodeld */; };
 		C379CC0624D8E3D100E991AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C379CC0524D8E3D100E991AB /* Assets.xcassets */; };
 		C379CC0924D8E3D100E991AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C379CC0724D8E3D100E991AB /* LaunchScreen.storyboard */; };
 		C379CC1424D8E3D100E991AB /* AffirmTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC1324D8E3D100E991AB /* AffirmTakeHomeTests.swift */; };
 		C379CC1F24D8E3D100E991AB /* AffirmTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC1E24D8E3D100E991AB /* AffirmTakeHomeUITests.swift */; };
+		C379CC2E24D8E43E00E991AB /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC2C24D8E43E00E991AB /* HomePageViewController.swift */; };
+		C379CC2F24D8E43E00E991AB /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C379CC2D24D8E43E00E991AB /* HomePageViewController.xib */; };
+		C379CC3324D8E47C00E991AB /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC3224D8E47C00E991AB /* BusinessModel.swift */; };
+		C379CC3524D8E4A200E991AB /* YelpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC3424D8E4A200E991AB /* YelpAPI.swift */; };
+		C379CC3724D8E4B900E991AB /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379CC3624D8E4B900E991AB /* HomePageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,6 @@
 		C379CBF624D8E3CF00E991AB /* AffirmTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AffirmTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C379CBF924D8E3CF00E991AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C379CBFB24D8E3CF00E991AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C379CBFD24D8E3CF00E991AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C379CC0024D8E3CF00E991AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C379CC0324D8E3CF00E991AB /* AffirmTakeHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AffirmTakeHome.xcdatamodel; sourceTree = "<group>"; };
 		C379CC0524D8E3D100E991AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C379CC0824D8E3D100E991AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,11 @@
 		C379CC1A24D8E3D100E991AB /* AffirmTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AffirmTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C379CC1E24D8E3D100E991AB /* AffirmTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmTakeHomeUITests.swift; sourceTree = "<group>"; };
 		C379CC2024D8E3D100E991AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C379CC2C24D8E43E00E991AB /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		C379CC2D24D8E43E00E991AB /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		C379CC3224D8E47C00E991AB /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
+		C379CC3424D8E4A200E991AB /* YelpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPI.swift; sourceTree = "<group>"; };
+		C379CC3624D8E4B900E991AB /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,12 @@
 		C379CBF824D8E3CF00E991AB /* AffirmTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				C379CC3824D8E4C200E991AB /* Network */,
+				C379CC3924D8E4D400E991AB /* Model */,
+				C379CC3A24D8E4D900E991AB /* ViewModel */,
+				C379CC3124D8E45C00E991AB /* View */,
 				C379CBF924D8E3CF00E991AB /* AppDelegate.swift */,
 				C379CBFB24D8E3CF00E991AB /* SceneDelegate.swift */,
-				C379CBFD24D8E3CF00E991AB /* ViewController.swift */,
-				C379CBFF24D8E3CF00E991AB /* Main.storyboard */,
 				C379CC0524D8E3D100E991AB /* Assets.xcassets */,
 				C379CC0724D8E3D100E991AB /* LaunchScreen.storyboard */,
 				C379CC0A24D8E3D100E991AB /* Info.plist */,
@@ -129,6 +137,39 @@
 				C379CC2024D8E3D100E991AB /* Info.plist */,
 			);
 			path = AffirmTakeHomeUITests;
+			sourceTree = "<group>";
+		};
+		C379CC3124D8E45C00E991AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C379CC2C24D8E43E00E991AB /* HomePageViewController.swift */,
+				C379CC2D24D8E43E00E991AB /* HomePageViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C379CC3824D8E4C200E991AB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C379CC3424D8E4A200E991AB /* YelpAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C379CC3924D8E4D400E991AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C379CC3224D8E47C00E991AB /* BusinessModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C379CC3A24D8E4D900E991AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C379CC3624D8E4B900E991AB /* HomePageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C379CC0924D8E3D100E991AB /* LaunchScreen.storyboard in Resources */,
+				C379CC2F24D8E43E00E991AB /* HomePageViewController.xib in Resources */,
 				C379CC0624D8E3D100E991AB /* Assets.xcassets in Resources */,
-				C379CC0124D8E3CF00E991AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C379CBFE24D8E3CF00E991AB /* ViewController.swift in Sources */,
+				C379CC3524D8E4A200E991AB /* YelpAPI.swift in Sources */,
+				C379CC3324D8E47C00E991AB /* BusinessModel.swift in Sources */,
+				C379CC3724D8E4B900E991AB /* HomePageViewModel.swift in Sources */,
+				C379CC2E24D8E43E00E991AB /* HomePageViewController.swift in Sources */,
 				C379CBFA24D8E3CF00E991AB /* AppDelegate.swift in Sources */,
 				C379CC0424D8E3CF00E991AB /* AffirmTakeHome.xcdatamodeld in Sources */,
 				C379CBFC24D8E3CF00E991AB /* SceneDelegate.swift in Sources */,
@@ -301,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C379CBFF24D8E3CF00E991AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C379CC0024D8E3CF00E991AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C379CC0724D8E3D100E991AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

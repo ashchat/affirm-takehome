@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomePageViewController.swift
 //  AffirmTakeHome
 //
 //  Created by Ashish Chatterjee on 8/3/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HomePageViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         // Do any additional setup after loading the view.
     }
 
-
 }
-
