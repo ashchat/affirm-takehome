@@ -15,7 +15,7 @@ class Network {
 
     func fetchYelpResults(latitude: Double, longitude: Double, offset: Int, term: String, completion: @escaping (YelpAPIResponse?, Error?) -> Void) {
         
-        let url = URL(string: "https://api.yelp.com/v3/businesses/search?location=NYC&offset=\(offset)&limit=10&radius=1000&term=\(term)")!
+        let url = URL(string: "https://api.yelp.com/v3/businesses/search?latitude=\(latitude)&longitude=\(longitude)&offset=\(offset)&limit=10&radius=1000&term=\(term)")!
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"

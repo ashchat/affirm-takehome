@@ -47,6 +47,7 @@ class CardView: UIView {
         imageView?.layer.masksToBounds = true
         imageView?.contentMode = .scaleAspectFill
         imageView?.translatesAutoresizingMaskIntoConstraints = false
+        imageView?.alpha = 0.8
         self.addSubview(imageView!)
         imageView?.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
         imageView?.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1).isActive = true
@@ -54,6 +55,8 @@ class CardView: UIView {
         nameLabel = UILabel()
         nameLabel?.translatesAutoresizingMaskIntoConstraints = false
         nameLabel?.textColor = .white
+        nameLabel?.textAlignment = .center
+        nameLabel?.font = .boldSystemFont(ofSize: 25)
         self.addSubview(nameLabel!)
         nameLabel?.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1).isActive = true
         nameLabel?.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.25).isActive = true
@@ -61,14 +64,18 @@ class CardView: UIView {
         
         ratingLabel = UILabel()
         ratingLabel?.translatesAutoresizingMaskIntoConstraints = false
-        ratingLabel?.backgroundColor = .gray
+        ratingLabel?.backgroundColor = .lightGray
         ratingLabel?.textColor = .white
         ratingLabel?.textAlignment = .center
+        ratingLabel?.layer.masksToBounds = true
+        ratingLabel?.layer.cornerRadius = 20
+        ratingLabel?.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         self.addSubview(ratingLabel!)
-        ratingLabel?.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.25).isActive = true
-        ratingLabel?.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.25).isActive = true
-        ratingLabel?.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        ratingLabel?.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        ratingLabel?.adjustsFontSizeToFitWidth = true
+        ratingLabel?.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
+        ratingLabel?.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        ratingLabel?.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        ratingLabel?.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
 
 }

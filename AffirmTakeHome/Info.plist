@@ -54,5 +54,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Affirm would like to use your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Affirm would like to use your location</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Affirm would like to use your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Affirm would like to use your location</string>
 </dict>
 </plist>

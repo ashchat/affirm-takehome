@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class HomePageViewController: UIViewController {
+class HomePageViewController: UIViewController, CLLocationManagerDelegate {
     
     var previousButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
@@ -39,16 +40,20 @@ class HomePageViewController: UIViewController {
     var businesses: [Business]?
     var currIndex = 0
     
+    var location: CLLocation?
+    var locationManager: CLLocationManager?
+    
     override func viewWillAppear(_ animated: Bool) {
-        fetchBusinesses(offset: offset)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getUserLocation()
     }
     
     func fetchBusinesses(offset: Int) {
-        network.fetchYelpResults(latitude: 40, longitude: -70, offset: offset, term: "restaurant") { (response, error) in
+        network.fetchYelpResults(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude, offset: offset, term: "restaurant") { (response, error) in
             if let response = response {
                 if self.businesses != nil {
                     self.businesses?.append(contentsOf: response.businesses)
@@ -63,6 +68,33 @@ class HomePageViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func getUserLocation() {
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.requestLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            self.location = location
+            fetchBusinesses(offset: offset)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedAlways {
+            if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
+                if CLLocationManager.isRangingAvailable() {
+                    fetchBusinesses(offset: offset)
+                }
+            }
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
     }
 
 }
